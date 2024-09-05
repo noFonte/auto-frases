@@ -1,7 +1,7 @@
 
 import sqlite3
 import os
-
+import random
 
  
 
@@ -89,5 +89,7 @@ def frases_limit(linha):
     return json_str
 
 
-
+def frase():
+    numero_0aN = random.randrange(0, total_de_frases()-2)
+    return frases_limit(numero_0aN)
 
